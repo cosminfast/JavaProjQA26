@@ -16,6 +16,13 @@ public class Main {
                 "cele "+kgsOfApples+" kg de mere cu Matilda.");
 
 
+        System.out.println(authorName+" a plecat la piata, de pe \n" +
+                "strada Baritiu nr 9, ca sa cumpere "+kgsOfApples+" kg\n" +
+                "de mere. Pe drum, "+    authorName     +" s-a intalnit cu Matilda.\n" +
+                "Impreuna cu Matilda, au mers la piata, iar "+authorName+" a impartit\n" +
+                "cele "+kgsOfApples+" kg de mere cu Matilda.");
+
+
         int x = 2;
         x+=x+=x++ + ++x;
         System.out.println(x);
