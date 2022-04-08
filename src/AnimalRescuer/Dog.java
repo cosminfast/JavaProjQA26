@@ -2,13 +2,33 @@ package AnimalRescuer;
 
 public class Dog {
 
-    String color = "yellow";
-    double weigth = 20.3;
-    int ageInMonths = 34;
-    String ownerName = "Mirabela";
-    String race = "Labrador";
-    String name = "Constantin";
-    boolean isMale = true;
+    private String color;
+    private double weigth;
+    private int ageInMonths;
+    private String ownerName;
+    private String race;
+    private String name;
+    private boolean isMale;
+
+    public String getColor(){
+        return this.color;
+    }
+    public void setColor(String color){
+        this.color = color;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+    public String getName(){
+        return this.name;
+    }
+    public boolean getIsMale(){
+        return this.isMale;
+    }
+    public void setIsMale(boolean isMale){
+        this.isMale = isMale;
+    }
+
 
     public void eat(){
         System.out.println("Eating dog food");
