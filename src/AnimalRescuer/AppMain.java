@@ -26,5 +26,12 @@ public class AppMain {
         if(dog.getName().contentEquals("George")){
             System.out.println("L-am gasit!");
         }
+
+        Mouse jerry = new Mouse();
+        jerry.setMale(true);
+
+        Labrador dor = new Labrador();
+        dor.bytes();
+        dor.sleep();
     }
 }

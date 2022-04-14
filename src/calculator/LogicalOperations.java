@@ -84,4 +84,15 @@ public class LogicalOperations {
         return sumOfArray(array)/array.length;
     }
 
+    public void populateArrayEvenNumber(int[] array){
+        int pos = 0;
+        for (int i = 1; i <= array.length/2; i++){
+            if (i % 2 == 0){
+                array[pos] = i;
+                pos++;
+            }
+        }
+
+    }
+
 }
