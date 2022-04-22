@@ -6,6 +6,16 @@ public class Calculator {
         return firstNumber + secondNumber;
     }
 
+    public int sum(int x, int y){
+        return x+y;
+    }
+    public int sum(int x, int y, int z){
+        return x+y+z;
+    }
+    public double sum(double x, double y){
+        return x+y;
+    }
+
     public int substract(int firstNumber, int secondNumber){
         int result = firstNumber - secondNumber;
         return result;
@@ -25,5 +35,7 @@ public class Calculator {
         int result = firstNumber % secondNumber;
         return result;
     }
+
+
 
 }

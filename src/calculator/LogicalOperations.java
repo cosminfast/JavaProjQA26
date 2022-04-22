@@ -1,5 +1,8 @@
 package calculator;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LogicalOperations {
 
     public  int getMax(int first, int second) {
@@ -92,7 +95,25 @@ public class LogicalOperations {
                 pos++;
             }
         }
-
     }
 
+    public List<Integer> getListToNumber(int number){
+        List<Integer> myList = new ArrayList<>();
+        for(int i = 0; i < number; i++){
+            myList.add(i+1);
+        }
+        return myList;
+    }
+
+    public void printListFromNumber(List<Integer> list, int number){
+        for(int i = number; i < list.size();i++){
+            System.out.print(list.get(i));
+        }
+    }
+
+    public void printList(List<Integer> list){
+        for(Integer x:list){
+            System.out.println(x);
+        }
+    }
 }

@@ -19,19 +19,23 @@ public class AppMain {
 //
 //        int y = 1;
 //        int z = y;
-        Dog dog = new Dog();
-        dog.setName("Barky");
-        dog.setColor("Blue");
-        System.out.println(dog.getName());
-        if(dog.getName().contentEquals("George")){
-            System.out.println("L-am gasit!");
-        }
+//        Dog dog = new Dog();
+//        dog.setName("Barky");
+//        dog.setColor("Blue");
+//        System.out.println(dog.getName());
+//        if(dog.getName().contentEquals("George")){
+//            System.out.println("L-am gasit!");
+//        }
+//
+//        Mouse jerry = new Mouse();
+//        jerry.setMale(true);
+//
+//        Labrador dor = new Labrador();
+//        dor.bytes();
+//        dor.sleep();
 
-        Mouse jerry = new Mouse();
-        jerry.setMale(true);
 
-        Labrador dor = new Labrador();
-        dor.bytes();
-        dor.sleep();
+        Poodle poodle = new Poodle();
+        poodle.speak();
     }
 }
