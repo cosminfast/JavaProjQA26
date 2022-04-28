@@ -19,10 +19,12 @@ public class Main5 {
 //        System.out.println(op.getAverageFromArray(myArray));
 //        System.out.println(op.getAverageFromArray(testArray));
 
-        int[] evenArray = new int[50];
-        op.populateArrayEvenNumber(evenArray);
+//        int[] evenArray = new int[50];
+//        op.populateArrayEvenNumber(evenArray);
+//
+//
+//        op.printArray(evenArray);
 
-
-        op.printArray(evenArray);
+        op.printCozaLozaWoza();
     }
 }
