@@ -69,6 +69,13 @@ public class LogicalOperations {
         return myArray;
     }
 
+    public int[] populateArrayToNumber(){
+        int[] myArray = new int[100];
+        for (int i = 0; i < myArray.length; i++){
+            myArray[i] = i + 1;
+        }
+        return myArray;
+    }
     public void printArray(int[] array){
         for (int i = 0; i< array.length; i++){
             System.out.print(array[i]+", ");

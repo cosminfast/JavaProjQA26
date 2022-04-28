@@ -25,6 +25,6 @@ public class Main5 {
 //
 //        op.printArray(evenArray);
 
-        op.printCozaLozaWoza();
+//        op.printCozaLozaWoza();
     }
 }
