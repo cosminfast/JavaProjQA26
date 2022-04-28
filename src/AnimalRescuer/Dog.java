@@ -1,12 +1,8 @@
 package AnimalRescuer;
 
-public class Dog extends Animal{
+public abstract class Dog extends Animal{
 
-
-
-    public void eat() {
-        System.out.println("Eating dog food");
-    }
+    public abstract void eat();
 
     public void sleep() {
         System.out.println("zzzzZZZ");
@@ -23,4 +19,6 @@ public class Dog extends Animal{
     public void bytes(){
         System.out.println("Ham! Byte!");
     }
+
+
 }

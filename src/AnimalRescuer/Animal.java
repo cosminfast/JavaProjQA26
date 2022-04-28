@@ -1,6 +1,6 @@
 package AnimalRescuer;
 
-public class Animal {
+public abstract class Animal {
     private String color;
     private double weigth;
     private int ageInMonths;
@@ -81,5 +81,7 @@ public class Animal {
     public void setMale(boolean male) {
         isMale = male;
     }
+
+    public abstract void speak();
 
 }

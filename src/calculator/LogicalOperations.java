@@ -1,5 +1,8 @@
 package calculator;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LogicalOperations {
 
     public  int getMax(int first, int second) {
@@ -92,33 +95,25 @@ public class LogicalOperations {
                 pos++;
             }
         }
-
     }
 
+    public List<Integer> getListToNumber(int number){
+        List<Integer> myList = new ArrayList<>();
+        for(int i = 0; i < number; i++){
+            myList.add(i+1);
+        }
+        return myList;
+    }
 
-    public void printCozaLozaWoza(){
-        for (int i = 1; i <= 110; i++) {
+    public void printListFromNumber(List<Integer> list, int number){
+        for(int i = number; i < list.size();i++){
+            System.out.print(list.get(i));
+        }
+    }
 
-            if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
-                System.out.print("CozaLozaWoza ");
-            } else if (i % 3 == 0 && i % 5 == 0){
-                System.out.print("CozaLoza ");
-            } else if (i % 5 == 0 && i % 7 == 0){
-                System.out.print("WozaLoza ");
-            } else if (i % 3 == 0 && i % 7 == 0){
-                System.out.print("CozaWoza ");
-            } else if (i % 3 == 0) {
-                System.out.print("Coza ");
-            } else if (i % 5 == 0) {
-                System.out.print("Loza ");
-            } else if (i % 7 == 0) {
-                System.out.print("Woza ");
-            } else
-                System.out.print(i + " ");
-
-            if (i % 11 == 0) {
-                System.out.println();
-            }
+    public void printList(List<Integer> list){
+        for(Integer x:list){
+            System.out.println(x);
         }
     }
 }
