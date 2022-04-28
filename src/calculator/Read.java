@@ -1,6 +1,8 @@
 package calculator;
 
+import java.util.ArrayList;
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 public class Read {
@@ -18,5 +20,26 @@ public class Read {
             }
         }while (true);
     }
+
+    public List<Integer> getList(){
+        List<Integer> list = new ArrayList<>();
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the numbers in the list: ");
+        do {
+            try {
+                list.add(scan.nextInt());
+            }catch (InputMismatchException e){
+                if (scan.nextLine().equalsIgnoreCase("q")){
+                    break;
+                }else {
+                    System.out.println("Invalid value given" );
+                }
+            }
+
+        }while (true);
+        return list;
+    }
+
+
 
 }

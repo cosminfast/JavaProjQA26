@@ -34,7 +34,9 @@ public class Main7 {
 //        System.out.println(list.get(3));
 
         Read read = new Read();
-        System.out.println(read.getInt());
+//        System.out.println(read.getInt());
+
+        System.out.println(read.getList());
 
     }
 }
